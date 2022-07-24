@@ -108,7 +108,7 @@ class OurNeuralNetwork:
       if epoch % 10 == 0:
         y_preds = np.apply_along_axis(self.feedforward, 1, data)
         loss = mse_loss(all_y_trues, y_preds)
-        #print("Epoch %d loss: %.3f" % (epoch, loss))
+        print("Epoch %d loss: %.3f" % (epoch, loss))
 
 # Define dataset
 data = np.array([
